@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>课程学习 | 西南交通大学网络教育学院</title>
+<link rel="stylesheet" type="text/css" href="/theme/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+<link href="/pages/course/images/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/theme/js/jquery.min.js"></script> 
+<script type="text/javascript" src="/theme/js/site.js"></script> 
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/pages/course/js/public.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="/pages/course/js/ASCIIMathMLwFallback.js" charset="utf-8"></script>
+
+</head>
+<body>
+<div id="wrapper" class="container_16">
+
+<div id="header" class="grid_16 alpha omega">
+    <h1>课程学习</h1>
+
+	<div id="header_nav">
+	<h2 id="header-course-title">《交通运输系统分析》</h2>
+		<ul class="menu">
+		<li><a href="/course/Course_index.action?courseId=6" ><b class="eng">homepage</b>课程首页</a></li>		
+        <!--
+        <li><a href="/course/Course_courseDetailfdjx.action?courseId=6"><b class="eng">introduction</b>课程简介</a></li>
+        -->
+
+		
+		<li><a href="/course/Course_courseStudyfdjx.action?courseId=6&nid=2"><b class="eng">courseware</b>课程学习</a></li>
+		<!--
+		<li><a href="/center/Center_index.action?courseId=6"><b class="eng">homework</b>课程作业</a></li>
+		-->
+		<li>
+			<!--学生,11是已毕业学生。-->
+			<a href="/course/exercise/Student_scoreList.action?courseId=6"><b class="eng">homework</b>课程作业</a>
+			
+			
+		
+		
+		</li>
+		
+		<!-- 学生-->
+		<li><a href="/estimate/CourseEstimate_detail.action?courseId=6"><b class="eng">evaluation</b>课程评价</a></li>
+		
+		
+		<!--
+		<li><a href="/course/Course_courseDetailfdjx.action?courseId=6"><b class="eng">counselling</b>辅导教学</a></li>
+		-->
+		<li><a href="/forum/ForumTheme_list.action?courseId=6"><b class="eng">discussion</b>讨论区</a></li>
+		<!--<li><a href="/course/Course_logout.action?courseId=6"><b class="eng">logout</b>退出</a></li>-->
+		<li><a href="http://auth.xnjd.cn/logout?url=http://www.xnjd.cn"><b class="eng">logout</b>退出</a></li>
+		</ul>
+    </div>
+	<div class="clear"></div>
+
+<!-- end #header -->	
+</div>
+<div id="breadcrumb" class="grid_16 alpha omega">
+<div id="welcome">刘宇航,欢迎您进行课程学习！
+
+</div>
+</div>
+
+<div class="clear"></div>
+<!--
+<br><center><font color=red>课程学习平台将于2016年4月1日13:00进行维护，预计耗时1小时，计划将于2016年4月1日14:00恢复，给您带来不便，敬请谅解！</font></center><br>
+-->
+<!--ftl header end-->
+<link rel="stylesheet" type="text/css" href="/theme/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+<link href="/pages/course/exercise/images/style_exercise.css" rel="stylesheet" type="text/css">
+<style>
+.styletab td {
+	font-size:12px;
+}
+</style>
+<script language="javascript" src="/pages/course/js/frameResize.js"></script>
+<script language="javascript" src="/pages/course/exercise/ajax/http_request.js" charset="utf-8"></script>
+<script language="javascript" src="/pages/course/exercise/ajax/seek_node.js" charset="utf-8"></script>
+
+<script language="javascript">		
+	function mover(src,clrOver){ 
+		src.bgColor = clrOver; 
+	}
+	function mout(src,clrout)  { 
+		src.bgColor = clrout; 
+	}
+	function do_again(hid){
+		if(confirm("系统取最高分为你的作业成绩，确定要重新做本次作业吗？"))
+		{
+			window.location.href="/course/exercise/Student_doIt.action?courseId=6&homeworkId="+hid;
+		}
+	}
+	function return_list(){
+		window.history.back();
+	}
+</script>
+</head>
+
+
+<!-- 右边栏 -->
+<table border="0" width="100%" align="center">
+	<tr><td align=center>
+	
+		<!-- 主框架 -->
+			<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+				<tr valign=top><td align=center style="color:black;font-size: 16px;font-family:'黑体', sans-serif;font-weight:bold">前一次作业详情</td></tr>
+				
+							<tr height=25><td align=center style="color:red">你已经完成：0 题 （共有 46 题,客观题  24 道）</td></tr>
+					
+				
+				<tr height=5><td align=center style="color:red"></td></tr>
+				<tr height=25><td align=center style="color:red"><input style="border:1px solid #000000" type=button value="再做一次本次作业" onclick="do_again('2724');">&nbsp;&nbsp;&nbsp;&nbsp;<input style="border:1px solid #000000" type=button value="返回" onclick="return_list();"></td></tr>
+				<tr height=5><td align=center style="color:red"></td></tr>
+				<tr><td align="left">
+				<table style="border:#CC6600 solid 2px;" cellpadding='5' cellspacing='5' width="90%" align="center"><tr><td>
+				
+				
+				
+				
+				
+					
+				<!-- 主框架 -->	
+				<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+					<tr><td align=center style='color:#CC6600;font-weight:bold;'>（注意：若有主观题目，请按照题目，离线完成，完成后纸质上交学习中心，记录成绩。在线只需提交客观题答案。)</td></tr>
+				<tr><td><br><font color=green>本次作业是本门课程本学期的第2次作业，注释如下：</font><br></td></tr>
+				</table>
+				
+						<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+						<tr height=50><td class='ex_text2'>一、单项选择题(只有一个选项正确，共<font color=red>19</font>道小题)</td></tr>
+						
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>1. <span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>组成系统的各电子系统按照一定的层次结构分解、排列，这种分解的基本标志是（）。</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">目标</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">相关关系</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">环境约束</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">元素数目</td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>2. <span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>系统的整体性强调的是系统元素和功能的（）</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">阶层分布</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">协调关系</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">环境优化</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: ">功能目标</td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>3. <span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>切克兰德软系统方法论的核心是(     )</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">实现最优化</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">求得满意解</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">调查比较或学习</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">建立概念模型</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>D</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>4. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>系统分析采用系统方法对所研究的问题提出各种可行方案或策略，进行定性和定量分析、评价和协调，以供决策者选择行动方案，是一种（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'><font face='宋体, MS Song'>&nbsp; </font></span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">管理工程技术</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">决策辅助技术</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">工程应用技术</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">分析评价技术</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>5. <p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>我国公路运输系统采用的控制模式是(    )</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">递阶控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">分布控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">分散控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">集中控制</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>C</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>6. <span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>我国内河运输系统采用的控制模式是(     )</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">递阶控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<p style="MARGIN: 0cm 0cm 0pt" class="MsoNormal"><span style="FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">分布控制</span></p></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">分散控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">集中控制</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>C</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>7. <span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>在各种运输方式中，投资省、建设周期短、适合集中流向的油气运输的是(     )</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">铁路运输</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">公路运输</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">航空运输</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: ">水路运输</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<p style="MARGIN: 0cm 0cm 0pt" class="MsoNormal"><span style="FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">管道运输</span></p></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>E</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>8. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>按地理位置分类，我国的宜宾、重庆属于（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'><font face='宋体, MS Song'>&nbsp; </font></span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: "Times New Roman"; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">陆路运输枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: "Times New Roman"; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">滨海运输枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: "Times New Roman"; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">通航江河岸边运输枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: "Times New Roman"; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">湖泊运输枢纽</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>C</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>9. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>我国铁路主要干线、沿海和长江属于运输网的（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P48</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">开发线路</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">骨干线路</span><span style="FONT-SIZE: 10.5pt; FONT-FAMILY: "Times New Roman"; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"></span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">给养线路</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">腹地线路</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>10. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输规划的核心部分是（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P68</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">工程规划</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">发展规划</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输方式规划</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">布局规划</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>D</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>11. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输规划的基本任务是选择交通运输系统中各种运输方式的适用的地区并进行（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P67</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">合理规划</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">合理组织和布局</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">合理配置</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">合理优化</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>12. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>区域交通运输体系是区域各种运输方式的（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P183</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">不同组合</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">优化组合</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">整体组合</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">设备组合</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>13. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>按主要交通运输干线与站场空间分布形态分，我国的兰州属于（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P125</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">终端式枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">混合枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">辐射式枢纽</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">伸长式枢纽</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>D</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>14. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输的复杂性，很难用单一的指标来进行评价，必须进行多角度，多透视点的评价，建立（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp; </span><span style='mso-spacerun: yes'>&nbsp;</span><span style='mso-spacerun: yes'>&nbsp;</span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P169</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">综合指标体系</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">分层指标体系</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">整体指标体系</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">统一指标体系</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>15. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输系统是一个（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P43</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">动态系统</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">静态系统</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">封闭系统</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">概念</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>16. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>系统的分目标集必须保证系统的哪种要素的实现。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P4</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">总目标</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">任务</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">整体</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运作</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>17. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>一定时期内，全国或一个运输企业在货运工作方面所完成的货物运输吨公里数称为（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P85</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">货物到达吨数</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">货物周转量</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">货物运输量</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">货物发送量</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>B</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>18. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>供给函数反映了运输系统特征与以下哪一选项之间的关系？（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P96</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">系统输出水平</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">系统整体功能</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">系统输入条件</span><span style="FONT-SIZE: 10.5pt; FONT-FAMILY: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体"></span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">系统结构</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>19. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>系统有着一定的层次结构，并分解为一系列的子系统，这种分解的基本标志是（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P5</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">目标</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">功能</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">阶层关系</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">二元关系</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+						</table>
+				
+						
+						<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+						<tr height=50><td class='ex_text2'>二、不定项选择题(有不定个选项正确，共<font color=red>5</font>道小题)</td></tr>
+						
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>20. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>生产布局又称（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'><font face='宋体, MS Song'>&nbsp; </font></span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）．</span> [<font color=red>不选全或者选错，不算完成</font>]</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">生产分布</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">资源配置</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">生产配置</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">生产结构</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">结构配置</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A C</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>21. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输需求结构包括（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P74</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span> [<font color=red>不选全或者选错，不算完成</font>]</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">需求的时间分布</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">需求的空间分布</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">需求的数量分布</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">需求的状态分布</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">需求的客货运输结构</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A B E</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>22. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>运输系统的均衡包括（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P98~99</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span> [<font color=red>不选全或者选错，不算完成</font>]</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输市场均衡</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">用户均衡</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输经营者均衡</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输设备能力均衡</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">供需均衡</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A B C E</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>23. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>系统工程的基本原理有（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）。（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P17~18</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span> [<font color=red>不选全或者选错，不算完成</font>]</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">反馈控制</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">局部优化</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">系统</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">最优化</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">协调</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A D E</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+								<tr height=25><td class='ex_text' align=left>24. <span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输通道能力协调主要是指（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'><span style='mso-spacerun: yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span> [<font color=red>不选全或者选错，不算完成</font>]</td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(A)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">“点”能力协调</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(B)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">“线”能力协调</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(C)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">“点”“线”能力协调</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(D)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输设备能力协调</span></td></tr>
+								<tr height=25><td class='ex_text'>&nbsp;&nbsp;(E)&nbsp;<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">运输方式能力协调</span></td></tr>
+							<tr height=25><td class='ex_text' align=left bgcolor='#FF0000'><font color=white>你选择的答案：&nbsp;未选择&nbsp;&nbsp;[错误]</font></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>正确答案：</font>A B C</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>解答参考：</font></td></tr>
+							</table>
+							</td></tr>
+							<tr height=10><td></td></tr>
+						</table>
+				
+					
+				
+					
+						<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>
+						<tr><hr></tr>
+						<tr><td colspan=2 align=center style='color:#CC6600;font-weight:bold;'>（注意：若有主观题目，请按照题目，离线完成，完成后纸质上交学习中心，记录成绩。在线只需提交客观题答案。)</td></tr>
+						<tr height=50><td colspan=2 class='stu_homework_list' style='font-weight:bold;'>三、主观题(共<font color=red>22</font>道小题)</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>25.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>系统的环境适应性</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>适应外部环境变化以获取生存和发展能力的性质，就是系统的环境适应性．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>26.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>动态系统</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>内部结构参数随时间的函数变化而变化的系统称为动态系统．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>27.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>系统相关性的分析以几元关系为基础？为什么？</span></p></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>一般以二元关系作为相关性讨论的基础，因为任何多元素都是从二元关系基础上发展的．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>28.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>实体系统和概念系统的关系是怎样的？</span></p></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>实体系统是概念系统的形态化，又是实现概念系统要求的运行体．概念系统是实体系统的“灵魂”，实体系统则是概念系统的“躯壳”．二者既有联系又有区别，即在一定的条件下，可使实体系统抽象为概念系统，或者使概念系统具体化为实体系统．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>29.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>硬系统和软系统有什么区别？</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>硬系统又称为良结构系统，是指偏重工程系统、机理明显的物理系统，一般便于观察，便于用数学模型描述，边界清晰，目标明确，有较现成的定量方法可以计算出系统的行为和最佳结果．处理这类系统采用霍尔的系统工程方法（硬系统方法）非常有效．</span><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>而软系统又称为不良结构系统，是指偏重社会、机理，尚不清楚的生物型的软系统，较难用数学模型描述，往往只能用半定量、半定性或者只能用定性的方法来处理系统，这类系统难以观测，边界模糊，目标不定．</span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>30.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>系统工程学的主要特征表现在哪些方面？</td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span lang='EN-US'><font face='宋体, MS Song'>1. </font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>系统工程学是涉及到许多学科的边缘科学</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span lang='EN-US'><font face='宋体, MS Song'>2. </font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>系统工程学在很大程度上依赖于电子计算机</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span lang='EN-US'><font face='宋体, MS Song'>3. </font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>系统工程学的对象主要是大系统</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span lang='EN-US'><font face='宋体, MS Song'>4. </font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>系统工程学与自动化密切相关</span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>31.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>怎样理解交通运输系统的连续性？</span></p></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>交通运输系统是一个连续性的过程系统．</span><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>其连续性表现为运输生产过程的连续性和运输生产时间的连续性．其货物运输生产过程包括了集、装、运、卸、散诸环节所组成的生产全过程．旅客运输过程包括进站、上车、运行、到站、出站等过程和环节．在完整的运输过程系统中，任何一个单元出现故障都有直接影响系统功能的实现．</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>交通运输系统生产的连续性还表现在时间上的连续；这个系统必须全年、全月、全日地运转，而不能发生任何中断，如果发生运输中断，就破坏了运输的正常生产．为此，研究交通运输系统，需要紧紧地抓住连续性的特点．</span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>32.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>交通运输学科包含哪些分支？其主要研究内容分别是什么？</span></p></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>目前交通运输学科主要有以下</span><span lang='EN-US'><font face='宋体, MS Song'>4</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>大类分支学科．</span><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>（</span><span lang='EN-US'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>）交通运输法学：研究进行运输活动法律调整的科学．</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>（</span><span lang='EN-US'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>）交通运输经济学：研究交通运输部门中经济关系与经济活动规律的科学．</span></p><p style='MARGIN: 0cm 0cm 0pt' class='MsoNormal'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>（</span><span lang='EN-US'><font face='宋体, MS Song'>3</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri'>）交通运输工程学：研究交通运输系统工程建设问题．</span></p><span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>（</span><span style='FONT-FAMILY: Calibri; FONT-SIZE: 10.5pt; mso-bidi-font-family: ; mso-fareast-font-family: 宋体' lang='EN-US'><font face='宋体, MS Song'>4</font></span><span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>）交通运输学：主要包括交通运输技术设备和交通运输管理学．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>33.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>货物周转量</span><span style='mso-bidi-font-size: 10.5pt; mso-hansi-font-family: 宋体' lang='EN-US'></span></p><p /></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>指一定时期内全国或一个运输企业在货运工作方面所完成的货物运输吨公里．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>34.</strong>&nbsp;<span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>货物平均运程</span><span style='mso-bidi-font-size: 10.5pt; mso-hansi-font-family: 宋体' lang='EN-US'></span></p><p /></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><span style='FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt; mso-bidi-font-family: '>即货物的平均运输距离，表示平均每吨货物运送多少公里．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>35.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>经验判定法的预测原理是什么？其适用性如何？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>经验判定法主要靠人们的经验和综合分析能力来进行预测．利用这类方法进行近期预测还是较可靠的，有一定的可信度，但如进行中长期预测，由于环境条件的变化，专靠经验推倒就不完全符合实际而需采用其他类的预测方法．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>36.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>预测中的定量和定性分析有什么关系？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>预测的定量分析和定性分析是密不可分的．没有定性分析就不可能对定量分析给予科学解释；而定量分析有助于证明发展趋势的数量指标．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>37.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输供给与一般产品和服务的供给有什么不同？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）在交通运输系统中，供给者并不十分明确，因而不便于清楚地研究供给者行为．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）在交通运输中，供给的一些非货币特征相对于运营者收取的价格来说也是非常重要的．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><font face='宋体, MS Song'>3</font></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）很多确定交通运输供给的特征是使用者而不是供给者行为导致的结果．</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>38.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>运输短缺在宏观控制中的有什么作用？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font>答：<p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）短缺作为供给约束，制约经济的增长；</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）短缺作为非价格信号影响着运输的投入；</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>3</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）运输短缺作为一个局部信号，会引起运输需求在不同交通运输方式中实现替代或转移．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>39.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>为什么说优先建设综合交通运输通道是建设和改建整个交通网络的最优策略？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）建设一个高效率的综合交通运输通道，联系各大经济区和进出口岸，是执行开放搞活方针，加速经济发展所必不可少的基础条件之一．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）综合交通运输通道系统的建设符合经济原则．交通运输通道系统集中了高密度流量，在交通运输建设资金紧张条件下，优先把通道系统修建好，使一大部分运量处于高速度，高效率的交通运输状况，对缓解我国交通的落后状况意义重大，符合投资少效益高的经济原则．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>3</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）高效率的交通运输通道系统对改善国土综合利用，完善产业布局，加速梯度开发，打破封闭型经济，减少流动资金和原材料积压，提高生产效率都有重大意义．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>4</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）综合交通运输通道的修建，是强化我国综合交通运输网的基础，它将显著提高铁、水、公、航、管多种交通方式的综合效率，可以广泛采用联运、推广集装箱等各种有效的措施，使综合交通运输管理有一个大突破，获得管理方面的效益．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>5</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）修建国际陆路交通运输通道对缩短欧亚非的运输距离，加强国际交流，加速我国内地开发，具有重要的战略价值．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>40.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>请论述交通运输通道与综合运网的关系</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）交通运输通道与交通运输网在形式上的区别是；交通运输通道是联结交通流、客货流的密集带，呈线型结构，一般为双向运输；交通运输网是联结交通流产生地与目的地的交通运输线路与枢纽结合部的点线集合，呈网状结构．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）交通运输通道与交通运输网也有许多相通之处：交通运输网按其空间范围可分为国家交通运输网和地区交通运输网，通道也有如此的层次划分，全国范围的区际通道和地区性的区内通道．两者均可根据各地区的自然地理条件和交通运输需要，由两种或几种交通运输方式组成．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>3</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）交通运输通道与交通运输网的关系密切：交通运输通道构成交通运输网的骨架，联结交通网的主要枢纽集散点，通过与网的联系，形成强大的交通流，亦即通过线网来聚散通道的客货流．交通运输通道与交通运输网互为条件，相互促进，以达成整个交通运输系统的高效．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>交通运输通道的最高层次便是多功能多种交通运输方式的综合性立体通道系统．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>41.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>举例说明，研究交通运输系统<span lang='EN-US'>“</span>点<span lang='EN-US'>”</span>、<span lang='EN-US'>“</span>线<span lang='EN-US'>”</span>系统能力的协调时，应当注意哪些问题？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>1</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）必须将<span lang='EN-US'>“</span>点<span lang='EN-US'>”</span>系统的能力和<span lang='EN-US'>“</span>线<span lang='EN-US'>”</span>系统的能力进行综合平衡，使二者保持一定的比例关系，互相适应，同步发展．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>2</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）应以通道系统对通道的要求运量为目标，认真分析客、货流的规律，摸清<span lang='EN-US'>“</span>点<span lang='EN-US'>”</span>、<span lang='EN-US'>“</span>线<span lang='EN-US'>”</span>上各项设备的现有能力，找出薄弱环节，制定出改造协调措施，使二者满足通道运量的要求．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><font face='宋体, MS Song'>3</font></span><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>）<span lang='EN-US'>“</span>点<span lang='EN-US'>”</span>、<span lang='EN-US'>“</span>线<span lang='EN-US'>”</span>系统能力的协调，关键在枢纽、结合部的能力与区间能力的协调．应使<span lang='EN-US'>“</span>点<span lang='EN-US'>”</span>系统的能力稍稍大于区间的能力，以保证区间畅通无阻，并适应区间能力大幅度增长的要求．</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-size: 10.5pt'>（可自行举例说明）</span><span lang='EN-US' style='mso-hansi-font-family: 宋体; mso-bidi-font-size: 10.5pt'><p /></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>42.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输布局</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>又称交通运输配置，它是指铁路、公路、水运、航空和管道等五种现代化运输方式的线路（包括铁路线、公路线、水运航道和航线、航空线及管道等）、站（包括河港、海港、航空港等）的土木建筑物及相关技术设备和交通运输工具组成的交通运输网的地域分布.</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>43.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>为什么说交通运输系统是一个社会经济大系统？（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>P40~42</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='mso-spacerun: yes'>&nbsp;</span></span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输系统具备社会经济大系统的特征：</span></p><p><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>交通运输系统的功能复杂；交通运输系统的结构庞大复杂；交通运输系统的信息复杂；交通运输系统采用大系统的控制与协调的理论与方法；计算机管理是交通运输管理的重要手段；交通运输系统具有庞大的职工队伍。所以说，交通运输系统是一个社会经济大系统。</span></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>44.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>简述运输需求与运输供给的关系？（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P79</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>运输需求决定了运输供给的发展方向、规模和水平；而运输需求的满足受到运输供给的限制，这种限制来自于运输企业的运能、运价以及需求本身的时间和空间因素。</span></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>45.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>在路网建设中，为什么要优先考虑通道建设？</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>（</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'>1</span><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>）建设一个高效率的综合运输通道，联系各大经济区，是加速经济发展必不可少的基础条件之一；</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>（</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'>2</span><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>）综合交通运输通道建设符合经济原则；</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>（</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'>3</span><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>）高效率的交通运输通道对改善国土利用，完善产业布局，提高生产效率具有重大意义；</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>（</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'>4</span><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>）综合交通运输通道建设将显著提高综合运输效率，使综合运输管理有一个大突破，获得管理方面的效益；</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'><p /></span></p><p class='MsoNormal' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>（</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'>5</span><span style='FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>）建设国际陆路交通运输通道对于加强国际交流，加速内地开发，具有重要的战略价值。</span><span lang='EN-US' style='mso-bidi-font-size: 10.5pt'><p /></span></p></td></tr>
+							</table>
+							</td></tr>
+							<tr><td>
+							<table style='word-break:break-all;word-wrap:break-word;' width='100%' border='0' cellpadding='0' cellspacing='0'>								
+								<tr height=25><td class='stu_homework_list' align=left><strong>46.</strong>&nbsp;<span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>试分析交通运输枢纽内的主要协调关系（</span><span lang='EN-US' style='FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体'>P134~136</span><span style='FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'>）</span></td></tr>
+							<tr height=25><td class='ex_text' align=left><font color=green>参考答案：</font><p class='MsoNormalIndent' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 0cm; mso-char-indent-count: 0'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>主要包括：</span></p><p class='MsoNormalIndent' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>交通运输枢纽内干线运输间的协调，主要是指不同运输方式干线间的协调，以铁路与海运协调为主，分析设备能力匹配、作业过程连续、作业时间协调、有良好的组织保障等基本条件的满足，在日常作业计划中实现；</span> </p><p class='MsoNormalIndent' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>干线运输与工业运输间的协调，主要考虑衔接点的选择、作业时间的衔接、运输组织的配合等；</span> </p><p class='MsoNormalIndent' style='MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5'><span style='FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman''>干线运输与城市运输间的相互协调，主要考虑干线客运站点与站前广场、城市干道的能力匹配，以城市运输为干线运输提供旅客集散服务为目标。</span></p></td></tr>
+							</table>
+							</td></tr>
+						<tr><td colspan=2 style='color:red'><hr></td></tr>
+						</table>
+				
+				
+					
+			
+				
+				<!-- 主框架 end-->	
+					
+				</td></tr>	
+				</table>
+				</td></tr>
+				<tr height=5><td align=center style="color:red"></td></tr>
+				<tr height=25><td align=center style="color:red"><input style="border:1px solid #000000" type=button value="再做一次本次作业" onclick="do_again('2724');">&nbsp;&nbsp;&nbsp;&nbsp;<input style="border:1px solid #000000" type=button value="返回" onclick="return_list();"></td></tr>
+				<tr height=5><td align=center style="color:red"></td></tr>
+			</table>
+		<!-- 主框架 END -->
+	</td></tr>
+</table>
+<!-- 右边栏 END -->
+
+<!--ftl  footer start-->
+<div class="clear"></div>
+
+<div id="footer" class="grid_16 alpha omega">
+西南交通大学网络教育学院 版权所有  支持服务 028-87601900   <a href="http://www.miibeian.gov.cn/" target="_blank" title="蜀ICP备05026985号-2">蜀ICP备05026985号-2</a>
+<div id="english">SCHOOL OF DISTANCE EDUCATION SWJTU</div>
+<!-- end #footer -->
+</div>
+<div class="clear"></div>
+<!-- end #wrapper.container_16 -->
+</div>
+</body>
+</html>
